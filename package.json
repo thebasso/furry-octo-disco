@@ -1,0 +1,16 @@
+{
+  "name": "Crud_Snuuper_Proyect",
+  "version": "1.0.0",
+  "description": "Proyecto Crud_Snuuper_Proyect",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Basso",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.1.1",
+    "jwt-simple": "^0.5.1"
+  }
+}

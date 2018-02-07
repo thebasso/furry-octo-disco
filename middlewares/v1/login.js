@@ -10,7 +10,7 @@ exports.postOne = (req, res, next) => {
         if (user.password != req.body.password) {
           res.json({ success: false, message: 'authentication failed. Wrong password'});
         } else {
-            const token = jwt.sign({ id: user._id }, config.secret, {expiresIn: 86400} //24 hrs);
+            const token = jwt.sign({ id: user._id }, config.secret, {expiresIn: 86400} /*24 hrs*/);
             res.json({user, success: true, message: 'Enjoy your token', token: token });
           };
         })
